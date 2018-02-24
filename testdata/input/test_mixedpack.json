@@ -1,0 +1,32 @@
+{
+    "title": "mixedpack",
+    "case": "mixedpack",
+	"columns": [
+	{
+	"name": ["Product_Mixed_Pack_Code"],
+	"type": "Foreign_Key",
+	"refertotable": "product.csv",
+	"refertocol": ["Source_Product_Code"],
+	"condition": ["MP_Indicator","Y"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Product_Component_Code"],
+	"type": "Foreign_Key",
+	"refertotable": "product.csv",
+	"refertocol": ["Source_Product_Code"],
+	"condition": ["MP_Indicator","N"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": "Product_Component_Ratio",
+	"type": "Decimal",
+	"subtype": "Decimal(18,5)",
+	"condition": "sum(*) = 1 group by mixedpack.Product_Mixed_Pack_Code",
+	"partofKey": 0,
+	"mandatory": 1
+	}	
+	]
+}

@@ -1,0 +1,6 @@
+'''Requirements without Version Specifiers
+install the below requirements using following command on cmd:
+pip install -r Requirements.txt '''
+pandas
+mimesis
+xlrd

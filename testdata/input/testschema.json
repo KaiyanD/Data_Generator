@@ -1,0 +1,180 @@
+{
+    "title": "sales",
+	"columns": [
+	{
+	"name": "Day_Code",
+	"type": "Datetime",
+	"format": "YYYYMMDD",
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Source_Ship_from_Code"],
+	"type": "Foreign_Key",
+	"refertotable": "shipfrom.csv",
+	"refertocol": ["Source_Ship_from_Code"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Source_Ship_To_Code","Vending_Machine_Code","Vending_Machine_Location_Code"],
+	"type": "Foreign_Key",
+	"refertotable": "shipto.csv",
+	"refertocol": ["Source_Ship_To_Code","Vending_Machine_Code","Vending_Machine_Location_Code"],
+	"partofKey": [1,1,1],
+	"mandatory": [1,0,0]
+	},	
+	{
+	"name": ["Source_Product_Code"],
+	"type": "Foreign_Key",
+	"refertotable": "product.csv",
+	"refertocol": ["Source_Product_Code"],
+	"partofKey": 1,
+	"mandatory": 1
+	},		
+	{
+	"name": ["Source_Channel_Code"],
+ 	"type": "Foreign_Key",
+	"refertotable": "channel.csv",
+	"refertocol": ["Source_Channel_Code"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Source_Sales_Type_Code"],
+	"type": "Foreign_Key",
+	"refertotable": "salestype.csv",
+	"refertocol": ["Source_Sales_Type_Code"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": "Record_Type",
+	"type": "Categorical",
+	"options":["Normal","Cancel","Correction"],
+	"partofKey": 1,
+	"mandatory": 0
+	},	
+	{
+	"name": "Operation_Route_Type",
+	"type": "Categorical",
+	"options":["Vending_Machine","3rd_Party_Operator","Dispenser_Sales"],
+	"partofKey": 1,
+	"mandatory": 0
+	},	
+	{
+	"name": "Invoice_Number",
+	"type": "String",
+	"sub-type": "Code",
+	"max_length": 40,
+	"partofKey": 1,
+	"mandatory": 0
+	},	
+	{
+	"name": "Transaction_Type",
+	"type": "Categorical",
+	"options": ["Actual","Pre_Sale","Estimate"],
+	"partofKey": 0,
+	"mandatory": 1
+	},	
+	{
+	"name": "Currency_Code",
+	"type": "String",
+	"sub-type": "Currency",
+	"max_length": 3,
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Sales_Unit_Type_Flag",
+	"type": "Categorical",
+	"options": ["Loose","Case","Physical_Case","Multi-Pack"],
+	"partofKey": 0,
+	"mandatory": 1
+	},	
+	{
+	"name": "Quantity",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 1
+	},	
+	{
+	"name": "Unit_Cases",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Bottler_Gross_Revenue",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Bottler_Net_Sales_Revenue",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Bottler_Wholesale_Price",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Total_Discounts_amount",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Total_Taxes_amount",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Send_Datetimestamp",
+	"type": "Datetime",
+	"format": "YYYYMMDD HH:MM:SS",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Coverage_Count_Flag",
+	"type": "Y/N",
+	"partofKey": 0,
+	"mandatory": 0
+	},{
+	"name": "ISSCOM_Tradename_Code",
+	"type": "Integer",
+	"sub-type": "Code",
+	"max_length": 40,
+	"partofKey": 0,
+	"mandatory": 0
+	},{
+	"name": "Ship_To_Country",
+	"type": "String",
+	"sub-type": "Country",
+	"max_length": 255,
+	"partofKey": 0,
+	"mandatory": 0
+	},{
+	"name": "Ship_To_Address_1",
+	"type": "String",
+	"sub-type": "Address",
+	"max_length": 255,
+	"partofKey": 0,
+	"mandatory": 0
+	}
+	]
+}
+

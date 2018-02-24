@@ -1,0 +1,252 @@
+{
+  "TD_001_Positive_Data_Files": {
+    "channel": 25,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_002_Incorrect_Data_File_Name": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_003_Incorrect_Foreign_Key": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_004_Incorrect_File_Format_XLS": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_005_Incorrect_File_Format_TXT": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_006_Traditional_Chinese_Data_Included": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_007_Simplified_Chinese_Data_Included": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_008_Spanish_Data_Included": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_009_German_Data_Included": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_010_Incorrect_Format_Not_Comma_Separated": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_011_Incorrect_Format_Piped_Separated": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_012_Incorrect_Format_Not_Double_Quoted": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_013_Incorrect_Format_Not_UFT8": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_014_Incorrect_Format_Thousand_Comma_Separator": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_015_Incorrect_Format_Thousand_Decimal_Separator": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_016_Incorrect_Optional_Category": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_017_Incorrect_Data_Blank_Mandatory_Value": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_018_Incorrect_Data_NULL_Mandatory_Value": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_020_Incorrect_String_Code": {
+    "channel": 100,
+    "customer": 100,
+    "product": 100,
+    "sales": 100,
+    "salestype": 100,
+    "shipfrom": 100,
+    "shipto": 100,
+    "skip": "Y"
+  },
+  "TD_021_Incorrect_String_Length": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_022_Incorrect_String_Language_wPunctuation": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_023_Incorrect_String_Address_Currency_Length": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_024_Incorrect_String_Address_Currency_Language": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_025_Incorrect_Digit_Code": {
+    "channel": 50,
+    "customer": 50,
+    "product": 50,
+    "sales": 50,
+    "salestype": 50,
+    "shipfrom": 50,
+    "shipto": 50,
+    "skip": "Y"
+  },
+  "TD_026_All_In_One": {
+    "channel": 1500,
+    "customer": 1500,
+    "product": 1500,
+    "sales": 1500,
+    "salestype": 1500,
+    "shipfrom": 1500,
+    "shipto": 1500,
+    "skip": "Y"
+  }
+}

@@ -1,0 +1,138 @@
+{
+    "title": "sales",
+	"columns": [
+	{
+	"name": "Day_Cd",
+	"type": "Datetime",
+	"format": "YYYYMMDD",
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Ship_F"],
+	"type": "Foreign_Key",
+	"refertotable": "shipfrom.csv",
+	"refertocol": ["Ship_F"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Ship_T","VM_Cd","VM_L_Cd"],
+	"type": "Foreign_Key",
+	"refertotable": "shipto.csv",
+	"refertocol": ["Ship_T","VM_Cd","VM_L_Cd"],
+	"partofKey": [1,1,1],
+	"mandatory": [1,0,0]
+	},	
+	{
+	"name": ["Prod_Cd"],
+	"type": "Foreign_Key",
+	"refertotable": "product.csv",
+	"refertocol": ["Prod_Cd"],
+	"partofKey": 1,
+	"mandatory": 1
+	},		
+	{
+	"name": ["Chnl_Cd"],
+ 	"type": "Foreign_Key",
+	"refertotable": "channel.csv",
+	"refertocol": ["Chnl_Cd"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": ["Sls_Tp_Cd"],
+	"type": "Foreign_Key",
+	"refertotable": "salestype.csv",
+	"refertocol": ["Sls_Tp_Cd"],
+	"partofKey": 1,
+	"mandatory": 1
+	},	
+	{
+	"name": "Rcd_Tp",
+	"type": "Categorical",
+	"options":["Normal","Correction"],
+	"partofKey": 1,
+	"mandatory": 0
+	},	
+	{
+	"name": "Optn_Rt_Tp",
+	"type": "Categorical",
+	"options":["Vending_Machine","Dispenser_Sales"],
+	"partofKey": 1,
+	"mandatory": 0
+	},	
+	{
+	"name": "Inv_Nb",
+	"type": "String",
+	"sub-type": "Code",
+	"max_length": 40,
+	"partofKey": 1,
+	"mandatory": 0
+	},	
+	{
+	"name": "Trx_Tp",
+	"type": "Categorical",
+	"options": ["Actual","Estimate"],
+	"partofKey": 0,
+	"mandatory": 1
+	},	
+	{
+	"name": "Curr_Cd",
+	"type": "String",
+	"sub-type": "Currency",
+	"max_length": 3,
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Sls_Tp_F",
+	"type": "Categorical",
+	"options": ["Case","Multi-Pack"],
+	"partofKey": 0,
+	"mandatory": 1
+	},	
+	{
+	"name": "Qty",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 1
+	},	
+	{
+	"name": "Ut_Cs",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Btlr_G_Rvn",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Btlr_NtSls_Rvn",
+	"type": "Decimal",
+	"sub-type": "Decimal(18,5)",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Dtstamp",
+	"type": "Datetime",
+	"format": "YYYYMMDD HH:MM:SS",
+	"partofKey": 0,
+	"mandatory": 0
+	},	
+	{
+	"name": "Cvg_Ct_F",
+	"type": "Y/N",
+	"partofKey": 0,
+	"mandatory": 0
+	}
+	]
+}
+

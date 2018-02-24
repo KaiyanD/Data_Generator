@@ -1,0 +1,35 @@
+{
+    "title": "schemaTest",
+	"columns": [
+	{
+	"name": "scTest1",
+	"type": "String",
+	"sub-type": "Code",
+	"max_length": 10,
+	"partofKey": 1,
+	"mandatory": 1
+	},
+	{
+	"name": ["scTest2","scTest3"],
+	"type": "Foreign_Key",
+	"sub-type": "Code",
+	"refertotable": "ForeignKey.csv",
+	"refertocol": ["Column A","Column B"],
+	"partofKey": 1,
+	"mandatory": 1
+	},
+	{
+	"name": "Promo_Indicator",
+	"type": "Y/N",
+	"partofKey": 0,
+	"mandatory": 1
+	},
+	{
+	"name": "Day_Code",
+	"type": "Datetime",
+	"format": "YYYYMMDD",
+	"partofKey": 1,
+	"mandatory": 1
+	}
+	]
+}

@@ -1,0 +1,3 @@
+"Source_Channel_Code","Source_Channel_Desc","Local_SubChannel_Code","ISSCOM_SubTrade_Channel_Code"
+"Source_Channel_Code_d1","Source ,Channel Desc d1","Local_SubChannel_Code_d1","ISSCOM_SubTrade_Channel_Code_d1"
+"Source_Channel_Code_d2","Source_Channel_Desc_d2","Local_SubChannel_Code_d2","ISSCOM_SubTrade_Channel_Code_d2"
